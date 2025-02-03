@@ -25,7 +25,7 @@
                 What are you doing in the cyber-security Underworld subway, anyway? <br>
                 And do you even have a proper travel token, for a start?
             </p>
-
+            
             <!-- XSS vulnerability
 
                     Hack hint: typing <script>alert(1)</script> in the input field won't work, but
@@ -47,7 +47,7 @@
         input.addEventListener("input", updateValue);
 
         function updateValue(e) {
-            log.innerHTML = e.target.value;
+            log.textContent = e.target.value;
         }
 
     </script>
